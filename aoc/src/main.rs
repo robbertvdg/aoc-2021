@@ -1,7 +1,7 @@
-mod day1;
+mod day2;
 mod utils;
 
 fn main() {
-    day1::exercise1::exercise1();
-    day1::exercise2::exercise2();
+    day2::exercise1::exercise1();
+    day2::exercise2::exercise2();
 }
