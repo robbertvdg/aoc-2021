@@ -6,12 +6,8 @@ def generate_sums(max_int):
 
 
 def puzzle1(crab_positions: np.ndarray):
-    min_fuel = 0
-    for i in range(crab_positions.max()):
-        fuel_sum = np.absolute(crab_positions - i).sum()
-        if fuel_sum < min_fuel or min_fuel == 0:
-            min_fuel = fuel_sum
-    return min_fuel
+    med = int(np.median(crab_positions))
+    return np.absolute(crab_positions - med).sum()
 
 
 def puzzle2(crab_positions: np.ndarray):
